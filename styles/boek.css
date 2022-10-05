@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 100vh;
+    height: 100vh;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+
+
+
+    /*grid layout deeltaak*/
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 1fr 1fr 100px;
+
+    gap: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+
+}
+
+.container div {
+    padding: 10px;
+    border: 2px solid #0000;
+}
+
+.header {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color: red;
+    grid-column-start: 1;
+    /* start bij column 1 tot 4*/
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.boek-img {
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+
+.boek-text {
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
