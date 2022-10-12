@@ -1,7 +1,9 @@
 body {
     margin: 0;
     box-sizing: border-box;
+
 }
+
 
 
 
@@ -9,14 +11,10 @@ body {
     width: 100vh;
     height: 100vh;
 
-    font-family: sans-serif;
+
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
 
-
-
-
-    /*grid layout deeltaak*/
     display: grid;
 
     grid-template-columns: auto auto auto;
@@ -24,15 +22,19 @@ body {
 
     gap: 10px;
 
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
+    border-style: solid;
+
+    margin: 0px auto;
+
 
 
 }
 
 .container div {
-    padding: 10px;
-    border: 2px solid #0000;
+    padding: 2px;
+
 }
 
 .header {
@@ -40,9 +42,13 @@ body {
     font-weight: 900;
     font-size: 5em;
     color: red;
+
+    margin: 3%;
+    margin-left: 2%;
     grid-column-start: 1;
-    /* start bij column 1 tot 4*/
     grid-column-end: 4;
+
+
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -50,12 +56,40 @@ body {
 .boek-img {
     grid-row-start: 2;
     grid-row-end: 4;
+    margin-top: 5%;
+
 
 }
 
+p {
+    max-width: 30rem;
+
+}
 
 .boek-text {
     grid-row-start: 2;
     grid-row-end: 4;
+    margin-top: 1%;
+    font-size: 1.5em;
 
+}
+
+.button {
+
+    margin: 40% 40% 60%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.button:hover {
+    background-color: red;
 }
