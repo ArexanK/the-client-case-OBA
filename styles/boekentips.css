@@ -25,6 +25,7 @@
      font-family: avenir;
      font-weight: bold;
      text-align: center;
+     justify-content: space-between;
  }
 
  h3 {
@@ -33,8 +34,9 @@
      font-weight: 900;
      margin-top: 0.5em;
      text-align: center;
-     font-family: arial;
+     font-family: avenir;
      font-weight: bold;
+     justify-content: space-between;
 
  }
 
@@ -42,11 +44,12 @@
 
  nav ul li {
      list-style: none;
-     display: flex;
-
+     display: inline-flex;
      align-items: center;
      flex-direction: column;
      justify-content: space-between;
+
+
 
  }
 
@@ -58,6 +61,10 @@
 
      font-family: arial;
      font-weight: bold;
+
+
+
+
 
  }
 
@@ -351,4 +358,8 @@
      right: 35px;
      width: auto;
      position: absolute;
+ }
+
+ .footer {
+     font-size: 1rem;
  }
