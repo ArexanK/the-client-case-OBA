@@ -7,15 +7,18 @@
     <title>boekentips</title>
     <link rel="stylesheet" href="styles/boekentips.css" />
     <link rel="script" href="boekentips.js" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="boekentips.js"></script>
   </head>
 
 
   <body>
-    <header class="container">
+    <header class="header-container">
       <button class="btn-uitlog">uitloggen</button>
       <h1 class="logo">Oba</h1>
     
-      <h3>mijn bibliotheek</h3>
+      
+      <h3>welkom arexan kheyrdoon</h3>
       
       <nav>
         <ul>
@@ -23,9 +26,10 @@
           <li><a href="#">reserveren</a></li>
           <li><a href="#">e-books & luisterboeken</a></li>
           <li><a href="#">verlengen</a></li>
+          <li><a href="#">leeromgeving</a></li>
           <li><a href="#">studieruimte reserveren</a></li>
         </ul>
-      </nav>
+     
       
 
 
@@ -35,16 +39,58 @@
         <i class="bx bx-search"></i>
         <input type="text" placeholder="zoek boek" />
       </div>
+
+    </nav>
     </header>
 
-    <h4>gerelateerde boeken</h4>
+<!-- Container gelezen boeken -->
+<h3> gerelateerde boeken</h3>
+<div class="container">
+  <div class="slider">
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+    <div class="box3">
+    </div>
+    <div class="box4">
+    </div>
+    <div class="box5">
+    </div>
+    <div class="box6">
+    </div>
+    <div class="box7">
+    </div>
+  </div>
+</div>
+<div id="test"></div>
+
+
+
+
+
+
+
+<!--gelezen boeken slide-->
+<h3> gelezen boeken</h3>
     <div class="slide-container">
- 
       <div class="slide-content">
         <div class="card-wrapper">
-          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+
+
+
+<!--slide buttions-->
+          <div class="btns" id="next"><img src="assets/icons/arrow-circle-right.svg" /></div>
+          <div class="btns" id="previous"><img src="assets/icons/arrow-circle-left.svg" /></div>
+
+<!-- slide buttons ends-->
+
+
+
+<!--book 1-->
+
           <div class="card">
+            
             <div class="image-content">
               <span class="overlay"></span>
 
@@ -54,17 +100,15 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name">It Ends With Us by Colleen Hoover</h2>
-              <!-- <p class="description">
-                Een aangrijpende verhaal van Lily, die verliefd wordt op de
-                knappe neurochirurg Ryle. Hij is assertief, koppig en een tikje
-                arrogant, maar ook gevoelig, briljant en dol op Lily. De
-                opbloeiende nieuwe relatie brengt herinneringen terug aan Atlas,
-                haar eerste liefde.
-              </p>-->
-              <button class="button">Meer Info</button>
+              <h2 class="name">It Ends With Us </h2>
+             
+              <button class="button">meer info</button>
             </div>
           </div>
+
+
+
+<!--book 2-->
 
           <div class="card">
             <div class="image-content">
@@ -81,16 +125,11 @@
 
             <div class="card-content">
               <h2 class="name">The Spanish Love Deception</h2>
-              <!--<p class="description">
-                Catalina Martín, eindelijk, niet single. Haar familie is blij om
-                aan te kondigen dat ze haar Amerikaanse vriend naar de bruiloft
-                zal brengen. Iedereen is uitgenodigd om getuige te zijn van de
-                meest magische gebeurtenis van het decennium.
-              </p>-->
-              <button class="button">Meer Info</button>
+        
+              <button class="button">meer info</button>
             </div>
           </div>
-
+<!-- book 3-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
@@ -102,19 +141,13 @@
 
             <div class="card-content">
               <h2 class="name">
-                The American Roommate Experiment by Elena Armas
+                The American Roommate Experiment
               </h2>
-              <!--<p class="description">
-                Een ingenieur die romanschrijver werd en Lucas, een
-                professionele surfer die de neef van Rosie's beste vriend is en
-                ze hem al maanden stalkt op sociale media.Ze komen door
-                onvoorziene omstandigheden in hetzelfde appartement te wonen en
-                de rest is geschiedenis.
-              </p>-->
-              <button class="button">Meer Info</button>
+             
+              <button class="button">meer info</button>
             </div>
           </div>
-
+<!-- book 4-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
@@ -125,17 +158,12 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name">Verity by Colleen Hoover</h2>
-              <!--<p class="description">
-                Gaat over schrijfster Lowen. Ze kan bijna rondkomen, tot ze de
-                kans van haar leven krijgt: ze mag de boekenserie van Verity
-                Crawford voltooid, die door een auto-ongeluk zelf niet meer kan
-                schrijven.
-              </p>-->
-              <button class="button">Meer Info</button>
+              <h2 class="name">Verity </h2>
+             
+              <button class="button">meer info</button>
             </div>
           </div>
-
+<!-- book 5-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
@@ -150,20 +178,13 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name">Atomic Habits by James Clear</h2>
-              <!--<p class="description">
-                Wat je doelen ook zijn, Atomic Habits biedt een bewezen raamwerk
-                voor verbetering - elke dag. James Clear, een van 's werelds
-                toonaangevende experts op het gebied van gewoontevorming,
-                onthult praktische strategieën die je precies leren hoe je goede
-                gewoonten kunt vormen, slechte gewoontes kunt doorbreken en de
-                kleine gedragingen onder de knie kunt krijgen die tot
-                opmerkelijke resultaten leiden.
-              </p>-->
-            </div>
-            <button class="button">Meer Info</button>
+              <h2 class="name">Atomic Habits</h2>
+             
+            
+            <button class="button">meer info</button>
           </div>
-
+        </div>
+<!-- book 6-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
@@ -178,20 +199,13 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name">By The Book by Jasmine Guillory</h2>
-              <!--<p class="description">
-                Wat je doelen ook zijn, Atomic Habits biedt een bewezen raamwerk
-                voor verbetering - elke dag. James Clear, een van 's werelds
-                toonaangevende experts op het gebied van gewoontevorming,
-                onthult praktische strategieën die je precies leren hoe je goede
-                gewoonten kunt vormen, slechte gewoontes kunt doorbreken en de
-                kleine gedragingen onder de knie kunt krijgen die tot
-                opmerkelijke resultaten leiden.
-              </p>-->
-            </div>
-            <button class="button">Meer Info</button>
+              <h2 class="name">By The Book </h2>
+            
+            
+            <button class="button">meer info</button>
           </div>
-
+      </div>
+<!-- book7-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
@@ -203,78 +217,83 @@
                   class="card-img"
                 />
               </div>
-            </div>
+              </div>
+            
 
             <div class="card-content">
-              <h2 class="name">All About Us by bell hooks</h2>
-              <!--0<p class="description">
-                "Liefde is een combinatie van zorg, toewijding, kennis,
-                verantwoordelijkheid, respect en vertrouwen." "Leven maakt
-                liefhebben eenvoudig." "Goed liefhebben is de taak in alle
-                betekenisvolle relaties, niet alleen romantische banden." "Weten
-                hoe je eenzaam moet zijn, staat centraal in de kunst van het
-                liefhebben.
-              </p>-->
-            </div>
-            <button class="button">Meer Info</button>
+              <h2 class="name">All About Us </h2>
+            
+            
+            <button class="button">meer info</button>
           </div>
+    </div>
 
+<!-- book 8-->
           <div class="card">
             <div class="image-content">
               <span class="overlay"></span>
 
               <div class="card-image">
                 <img
-                  src="styles/images/allaboutusbook.jpeg"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">All About Us by bell hooks</h2>
-              <!--0<p class="description">
-              "Liefde is een combinatie van zorg, toewijding, kennis,
-              verantwoordelijkheid, respect en vertrouwen." "Leven maakt
-              liefhebben eenvoudig." "Goed liefhebben is de taak in alle
-              betekenisvolle relaties, niet alleen romantische banden." "Weten
-              hoe je eenzaam moet zijn, staat centraal in de kunst van het
-              liefhebben.
-            </p>-->
-            </div>
-            <button class="button">Meer Info</button>
-          </div>
-
-          <div class="card">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="styles/images/allaboutusbook.jpeg"
+                  src="styles/images/geisha.jpeg"
                   alt=""
                   class="card-img"
                 />
               </div>
             </div>
             <div class="card-content">
-              <h2 class="name">All About Us by bell hooks</h2>
-              <!--0<p class="description">
-            "Liefde is een combinatie van zorg, toewijding, kennis,
-            verantwoordelijkheid, respect en vertrouwen." "Leven maakt
-            liefhebben eenvoudig." "Goed liefhebben is de taak in alle
-            betekenisvolle relaties, niet alleen romantische banden." "Weten
-            hoe je eenzaam moet zijn, staat centraal in de kunst van het
-            liefhebben.
-          </p>-->
-            </div>
-            <button class="button">Meer Info</button>
+              <h2 class="name">Memoirs of a Geisha</h2>
+         
+            
+            <button class="button">meer info</button>
           </div>
-        </div>
-
+          </div>
+        
+<!-- end slide books -->
        
 
+        <!--footer-->
+        <section footer="footer">
+        <div class="footer-container">
+
+          <div class="footer-section">
+<h5>service</h5>
+ <!-- link veelgestelde vragen-->
+ <!-- link vestigingen-->
+ <!-- link abonnementen-->
+<!-- link contacten-->
+        </div>
+
+
+        <div class="footer-section">
+          <h5>over ons</h5>
+           <!-- link vacatures-->
+           <!-- link voor de pers-->
+           <!-- link partners-->
+          <!-- link fondsenwerving-->
+    
+                  </div>
+          
+                  <div class="footer-section">
+                    <h5>zakelijk</h5>
+                     <!-- link oba school-->
+                     <!-- link oba congres-->
+              
+                            </div>
+                          
+
+
+
+
+
     <div class="footer">© 2012 Openbare Bibliotheek Amsterdam</div>
+
+
+
+  </section>
+
+
+
+
       </body>
 </html>
