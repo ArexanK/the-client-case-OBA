@@ -2,27 +2,35 @@
 
 📚 Oba
  
-
-🧷 Inhoudsopgave
-
-Userstory 12: De OBA leden willen graag een persoonlijke boekentips krijgen zodat ze worden gestimuleerd om meer te lezen.
-
-
-
-
-
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
-
 🔖Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+  Userstory 12: De OBA leden willen graag een persoonlijke boekentips krijgen zodat ze worden gestimuleerd om meer te lezen.
+  Een gepersonaliseerde boekentips pagina gemaakt, op basis vann gelezen boeken krijgt oba lid aanbevelingen van hetzelfde genre.
+  Dit is nog NIET definitief af.  
+  
+<img width="762" alt="Screenshot 2022-10-14 at 12 21 03" src="https://user-images.githubusercontent.com/94745953/195826597-da275b5a-450b-4f26-af54-be630dc19ba7.png">
+
+<img width="1431" alt="Screenshot 2022-10-14 at 12 25 16" src="https://user-images.githubusercontent.com/94745953/195826607-505879ee-cde6-4e48-91f3-be992dc7a3b5.png">
+
+<img width="1440" alt="Screenshot 2022-10-14 at 12 29 49" src="https://user-images.githubusercontent.com/94745953/195826616-c06d81f0-2bc5-4570-845e-71f70bf95167.png">
+
+https://arexank.github.io/the-client-case-OBA/
 
 🔎Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
+HTML: 
+header > navbar> div class buttons > div container carousel>  div cards (scroll bar)> footer.
+
+
+CSS: 
+op volgorde de gestyled. Classes gebruikt zodat het niet andere element overschrijft, voorbeeld gebruik maken van <header class=""/> in plaats van <header>. 
+Ik heb geen :root gebruikt dit wil ik wel op de andere pagina implementeren.
+Transition animation gebruikt om carousel in beweging te brengen. 
+
+Javascript: 
+Voor carousal heb ik Javascript gebruikt. functions rotate() .clone() .prepend() .addClass gebruikt. Dit zorgt ervoor dat firstchild, last child steeds afwisselen, naar voor en dan naar achter.  
+
+
 
 
 
