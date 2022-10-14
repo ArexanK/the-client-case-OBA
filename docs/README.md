@@ -32,9 +32,9 @@ Voor carousal heb ik Javascript gebruikt. functions rotate() .clone() .prepend()
 
 
 
-
-
 🖇Bronnen
+ 
+ - Oba website en styleguides
 
 📌 Licentie
 
