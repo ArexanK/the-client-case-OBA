@@ -5,6 +5,12 @@
 
 🧷 Inhoudsopgave
 
+Userstory 12: De OBA leden willen graag een persoonlijke boekentips krijgen zodat ze worden gestimuleerd om meer te lezen.
+
+
+
+
+
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Bronnen](#bronnen)
