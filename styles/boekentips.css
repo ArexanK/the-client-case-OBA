@@ -43,7 +43,7 @@
 
  body {
 
-     background-color: #EFEFEF;
+     background-color: white;
      font-family: avenir_lt_std95_black;
      font-weight: bolder;
  }
@@ -66,17 +66,37 @@
 
  h2 {
      text-align: center;
- }
-
- h3 {
-     color: rgb(129, 129, 129);
+     color: rgb(134, 132, 132);
      font-size: 2em;
      font-weight: 900;
-     margin-top: 0.5em;
-     text-align: center;
+     border-style: double;
+ }
+
+
+
+ h3 {
+     color: black;
+     font-size: 2em;
+     font-weight: 900;
+     margin-left: 3em;
+     text-align: left;
      font-family: avenir_lt_std95_black;
      font-weight: bold;
      justify-content: space-between;
+
+ }
+
+
+
+ .logo-img {
+     max-width: 40vh;
+     align-items: center;
+     position: relative;
+
+
+     left: 40%;
+
+
 
  }
 
@@ -174,43 +194,50 @@
  }
 
  .box1 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     /*aanbevelingen*/
+     background: url(/styles/images/aanbevelingen.jpeg);
      background-size: cover;
      background-position: center center;
+
  }
 
  .box2 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     /*events*/
+     background: url(/styles/images/events.jpeg);
      background-size: cover;
      background-position: center center;
  }
 
  .box3 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     /*activiteiten*/
+     background: url(/styles/images/activiteiten.jpeg);
      background-size: cover;
      background-position: center center;
  }
 
  .box4 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     /*e-books en luisterboeken*/
+     background: url(/styles/images/e\ book.jpeg);
      background-size: cover;
      background-position: center center;
+
  }
 
  .box5 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     /*Theater*/
+     background: url(/styles/images/theater.jpeg);
      background-size: cover;
      background-position: center center;
  }
 
  .box6 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     background: url(/styles/images/krant.png);
      background-size: cover;
      background-position: center center;
  }
 
  .box7 {
-     background: url(/styles/images/achtergrond-grijs.jpeg);
+     background: url(/styles/images/maxresdefault.jpg);
      background-size: cover;
      background-position: center center;
  }
@@ -301,8 +328,8 @@
 
 
  /* scroll bar*/
-
- .slide-container .images .image-box {
+ /*gelezen boeken*/
+ .images .image-box {
      position: relative;
      height: 40px;
      width: 200px;
@@ -314,19 +341,17 @@
 
 
 
- .slide-container {
+ /*.slide-container {
      display: flex;
 
      width: 100%;
      height: 20%;
 
 
-
-
  }
-
+*/
  .card-wrapper {
-     display: flex;
+     display: table-row;
      overflow-x: scroll;
      color: rgb(255, 0, 0);
      box-sizing: border-box;
@@ -334,7 +359,7 @@
 
  }
 
- .slide-content {
+ /*.slide-content {
 
      overflow: hidden;
      border-radius: 25px;
@@ -348,12 +373,12 @@
      font-size: 30px;
      align-items: center;
 
- }
+ }*/
 
 
  .card {
      border-radius: 25px;
-     background-color: #FFF;
+     background-color: rgb(247, 243, 243);
      margin-left: 2em;
      margin-top: 1rem;
      width: 320px;
@@ -378,16 +403,7 @@
      padding: 25px 0;
  }
 
- .overlay {
-     position: absolute;
-     left: 0;
-     top: 0;
-     height: 100%;
-     width: 100%;
-     background-color: rgb(233, 233, 233);
-     border-radius: 25px 25px 0 25px;
- }
-
+ /*
  .overlay::before,
  .overlay::after {
      content: '';
@@ -403,7 +419,7 @@
      border-radius: 0 25px 0 0;
      background-color: #FFF;
  }
-
+*/
  .card-image {
      position: relative;
      height: 300px;
@@ -435,19 +451,56 @@
 
  }
 
+ /*BUTTONS*/
+
  .button {
      border: none;
      font-size: 16px;
      color: #FFF;
+     font-family: avenir_lt_std95_black;
+     font-weight: bolder;
      padding: 8px 16px;
-     background-color: rgb(255, 7, 7);
+     background-color: #F44336;
      border-radius: 6px;
 
      cursor: pointer;
      align-items: center;
-
+     display: inline-block;
+     margin: 0.5em;
+     padding: 1.2em 1em;
+     overflow: hidden;
+     position: relative;
+     text-decoration: none;
+     text-transform: uppercase;
+     border-radius: 3px;
  }
 
+ .carousel {
+     font-size: 16px;
+     color: #FFF;
+     font-family: avenir_lt_std95_black;
+     font-weight: bolder;
+     background-color: #F44336;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+     align-items: center;
+
+
+     border: none;
+
+     text-align: center;
+
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 1.2em 5em;
+     overflow: hidden;
+     position: relative;
+     text-decoration: none;
+     text-transform: uppercase;
+     border-radius: 3px;
+
+ }
 
 
 
@@ -456,11 +509,13 @@
  }
 
  .btn-uitlog {
+     font-family: avenir_lt_std95_black;
+
      border: none;
      font-size: 16px;
      color: #FFF;
      padding: 8px 16px;
-     background-color: rgb(255, 7, 7);
+     background-color: #F44336;
      border-radius: 6px;
      margin: 5px;
      cursor: pointer;
@@ -500,8 +555,16 @@
      left: -10px;
      border-radius: 0px 7px 7px 7px;
 
-
  }
+
+
+
+
+
+
+
+
+
 
 
  /* end scroll bar*/
