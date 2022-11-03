@@ -489,6 +489,26 @@
  }
 
 
+ .btn {
+
+     position: absolute;
+
+     font-family: avenir_lt_std95_black;
+
+
+     background-color: #F44336;
+     color: white;
+     font-size: 16px;
+     padding: 8px 16px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     margin: 5px;
+     float: right;
+
+ }
+
+
 
  .btns {
      position: absolute;

@@ -10,6 +10,20 @@ body {
     background-color: white;
 }
 
+.logo-img {
+    max-width: 40vh;
+    align-items: center;
+    position: relative;
+
+
+    left: 40%;
+
+
+
+}
+
+
+
 h1 {
     color: red;
     font-size: 13em;
