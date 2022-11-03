@@ -126,6 +126,10 @@
 
  }
 
+ nav>ul>li>a:hover {
+     color: #F44336;
+ }
+
  h4 {
      color: rgb(129, 129, 129);
      font-size: 0.5em;
@@ -134,7 +138,6 @@
      text-align: center;
 
  }
-
 
 
 
@@ -341,15 +344,7 @@
 
 
 
- /*.slide-container {
-     display: flex;
 
-     width: 100%;
-     height: 20%;
-
-
- }
-*/
  .card-wrapper {
      display: table-row;
      overflow-x: scroll;
@@ -359,21 +354,7 @@
 
  }
 
- /*.slide-content {
 
-     overflow: hidden;
-     border-radius: 25px;
-     padding: 20px;
-
- }
-
-
-
- .slide-container>div {
-     font-size: 30px;
-     align-items: center;
-
- }*/
 
 
  .card {
@@ -403,23 +384,7 @@
      padding: 25px 0;
  }
 
- /*
- .overlay::before,
- .overlay::after {
-     content: '';
-     position: absolute;
-     right: 0;
-     bottom: -40px;
-     height: 40px;
-     width: 40px;
-     background-color: rgb(255, 255, 255)
- }
 
- .overlay::after {
-     border-radius: 0 25px 0 0;
-     background-color: #FFF;
- }
-*/
  .card-image {
      position: relative;
      height: 300px;
@@ -537,7 +502,6 @@
      z-index: 999;
      overflow: hidden;
 
-
  }
 
  .btns:hover {
@@ -558,6 +522,73 @@
  }
 
  /* end button*/
+
+
+ /*flex en grid*/
+
+
+ .flex-container {
+     max-width: 100rem;
+     margin: 0 auto;
+     padding: 0 2rem 2rem;
+     float: right;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+
+     top: 160%;
+     left: 40%;
+
+ }
+
+
+
+ .gallery {
+     display: flex;
+     flex-wrap: wrap;
+     margin: -1rem -1rem;
+
+ }
+
+
+ .gallery-item {
+
+     flex: 1 1 20rem;
+
+     margin: 1rem;
+     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+     overflow: hidden;
+ }
+
+ .gallery-image {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 400ms ease-out;
+ }
+
+ .gallery-image:hover {
+     transform: scale(1.15);
+ }
+
+ @supports (display: grid) {
+     .gallery {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+         grid-gap: 2rem;
+     }
+
+
+     .gallery,
+     .gallery-item {
+         margin: 0;
+     }
+
+
+ }
+
+
 
  /* start footer */
 
@@ -650,32 +681,37 @@
      }
  }
 
+ /*end footer*/
 
 
-
-
-
-
-
-
-
- /* end footer*/
 
  /* media queries*/
 
- /*@media (max-width:991px) 
+ /*mobile*/
+ @media (min-width:320px) and (max-width:480px) {
+
+     nav>ul>li>a {
+         width: 100px;
+
+     }
+
+ }
+
+ /*tablet*/
+ @media (min-width: 481px) and (max-width:768px) {
+     nav>ul>li>a {
+         width: 100px;
+
+     }
+
+ }
 
 
+ /*desktop*/
+ @media (min-width: 769px) and (max-width:1023px) {
+     nav>ul>li>a {
+         width: 100px;
 
+     }
 
-
-
- @media (max-width:768px) 
-
-
-
-
-  
-
-
-@media (max-width:450px) */
+ }
