@@ -588,10 +588,11 @@
      transition: transform 400ms ease-out;
  }
 
+ /*
  .gallery-image:hover {
      transform: scale(1.15);
  }
-
+*/
  @supports (display: grid) {
      .gallery {
          display: grid;
@@ -641,7 +642,7 @@
  }
 
  .footer-content-wrapper {
-     width: 80%;
+     width: 100%;
      margin: 1em auto;
  }
 
