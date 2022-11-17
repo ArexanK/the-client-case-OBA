@@ -18,17 +18,9 @@ https://arexank.github.io/the-client-case-OBA/
 
 🔎Kenmerken
 
-HTML: 
-header > navbar> div class buttons > div container carousel>  div cards (scroll bar)> footer.
+code: HTML, CSS en JavaScript
 
-
-CSS: 
-op volgorde de gestyled. Classes gebruikt zodat het niet andere element overschrijft, voorbeeld gebruik maken van <header class=""/> in plaats van <header>. 
-Ik heb geen :root gebruikt dit wil ik wel op de andere pagina implementeren.
-Transition animation gebruikt om carousel in beweging te brengen. 
-
-Javascript: 
-Voor carousal heb ik Javascript gebruikt. functions rotate() .clone() .prepend() .addClass gebruikt. Dit zorgt ervoor dat firstchild, last child steeds afwisselen, naar voor en dan naar achter.  
+Tools: Figma Visual Studio code
 
 
 
