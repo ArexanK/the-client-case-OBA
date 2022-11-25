@@ -696,7 +696,7 @@
  /* media queries*/
 
  /*mobile*/
- @media screen and (max-width:400px) {
+ @media screen and (max-width:320px) {
 
      body {
          width: 57%;
@@ -709,16 +709,11 @@
          padding: 0;
          margin: 10px 0;
          text-align: center;
-
-
      }
 
 
 
 
-     .container {
-         width: 40%;
-     }
 
      .logo-img {
          width: 50%;
@@ -729,18 +724,6 @@
      .btn-reservering {
          flex-direction: column;
          width: 20px;
-     }
-
-     .carousel {
-         width: 50%;
-     }
-
-     .card-wrapper {
-         width: 50%;
-     }
-
-     .flex-container {
-         width: 50%;
      }
 
 
@@ -771,20 +754,13 @@
              flex-direction: column;
              padding: 0;
              margin: 10px 0;
-
-
-
          }
 
 
 
-         .container {
-             width: 20%
-         }
 
          .logo-img {
              width: 20px;
-
          }
 
          .btn-uitlog,
@@ -801,6 +777,7 @@
 
      /*desktop*/
      @media screen and (max-width:1024px) {
+
          body {
              width: 100px;
          }
@@ -809,19 +786,6 @@
          h2,
          h3 {
              width: 100px;
-
-
-         }
-
-         .container {
-             width: 100px;
-         }
-
-         ul li {
-
-             width: 20px;
-             flex-direction: column;
-
          }
 
      }
