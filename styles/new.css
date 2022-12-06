@@ -2,6 +2,38 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
+@font-face {
+    font-family: 'avenir_lt_std95_black';
+    src: url('../assets/fonts/avenir/avenirltstd-black-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-black-webfont.woff') format('woff');
+    font-weight: heavy;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std45_book';
+    src: url('../assets/fonts/avenir/avenirltstd-book-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'avenir_lt_std55_roman';
+    src: url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff2') format('woff2'),
+        url('../assets/fonts/avenir/avenirltstd-roman-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+
+
 
 * {
     box-sizing: border-box;
@@ -17,7 +49,76 @@ body {
     background-color: white;
 }
 
-.container {
+
+
+.nav-link {
+    list-style: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid rgb(66, 65, 65);
+    width: 8rem;
+    float: right;
+    text-decoration: none;
+
+}
+
+
+
+.navbar {
+    background: white;
+    position: relative;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.nav-header,
+.subtitle {
+    color: black;
+    text-align: center;
+
+
+
+}
+
+h1 {
+    color: red;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.nav-header {
+    display: flex;
+
+    align-items: center;
+
+
+}
+
+.nav-toggle {
+
+    background: transparent;
+    border: transparent;
+    color: tomato;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.card-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 40px;
@@ -32,80 +133,22 @@ a {
 
 
 
-.nav-link {
-    list-style: none;
-    margin: 20 0px;
-    border-bottom: 2px solid rgb(66, 65, 65);
-    width: 8rem;
-    float: right;
-}
-
-
-
-.navbar {
-    background: white;
-    position: fixed;
-    width: 100%
-}
-
-
-.flex-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.nav-header,
-.subtitle {
-    color: black;
-    ;
-
-}
-
-h1 {
-    color: red;
-}
-
-
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-.nav-toggle {
-
-    background: transparent;
-    border: transparent;
-    color: tomato;
-    ;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-
-
-/*.btn-uitlog,
-.btn-reservering {
-    float: right;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}*/
 
 
 .nav-links {
     height: 0;
     overflow: hidden;
 
+
 }
 
 .nav-open {
-    height: 100vh;
+    height: 50vh;
 
 }
+
+
+
 
 
 
@@ -151,14 +194,15 @@ h1 {
 
 
 .card-container {
-    position: relative;
+
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: relative;
     align-items: center;
-    flex: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     padding: 30px;
+
 
 }
 
@@ -171,6 +215,7 @@ h1 {
     margin: 50px 20px;
     padding: 20px 15px;
     flex-direction: row;
+
 
     box-shadow: 0 5px 5px 3px rgba(240, 255, 255);
     transition: 0.5s ease-in-out;
@@ -196,6 +241,7 @@ h1 {
 }
 
 
+
 .card-container .card .imgBx .img h4 {
     display: flex;
     justify-content: center;
@@ -211,7 +257,7 @@ h1 {
 
 .card-container .card .content {
     position: relative;
-    margin-top: -140px;
+    margin-top: -150px;
     padding: 10px 5px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -219,6 +265,7 @@ h1 {
     opacity: 0;
     transition: 0.3s ease-in-out;
     line-height: 29px;
+
 
 }
 
@@ -238,152 +285,100 @@ h1 {
 
 
 
-/* carousel-container*/
+/* slider-container*/
+#slider {
+    position: relative;
 
-
-.box1 {
-    /*aanbevelingen*/
-    background: url(/styles/images/aanbevelingen.jpeg);
-    background-size: cover;
-    background-position: center center;
-
-}
-
-.box2 {
-    /*events*/
-    background: url(/styles/images/events.jpeg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.box3 {
-    /*activiteiten*/
-    background: url(/styles/images/activiteiten.jpeg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.box4 {
-    /*e-books en luisterboeken*/
-    background: url(/styles/images/e\ book.jpeg);
-    background-size: cover;
-    background-position: center center;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    width: 1000px;
+    height: 300px;
 
 }
 
-.box5 {
-    /*Theater*/
-    background: url(/styles/images/theater.jpeg);
-    background-size: cover;
-    background-position: center center;
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+
+    list-style: none;
 }
 
-.box6 {
-    background: url(/styles/images/krant.png);
-    background-size: cover;
-    background-position: center center;
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
 }
 
-.box7 {
-    background: url(/styles/images/maxresdefault.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel [class*="box"] {
-    /*   float: left; */
-    overflow: hidden;
-    border-radius: 20px;
-    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+a.control_prev,
+a.control_next {
     position: absolute;
-}
+    top: 40%;
 
-.carousel [class*="box"]:nth-child(7),
-.carousel [class*="box"]:nth-child(1) {
-    width: 100vh;
-    height: 60vh;
-    transform: scale(0.2) translate(-50%, -50%);
-    top: 10%;
-    z-index: 1;
-}
 
-.carousel [class*="box"]:nth-child(2),
-.carousel [class*="box"]:nth-child(6) {
-    width: 100vh;
-    height: 60vh;
-    transform: scale(0.4) translate(-50%, -50%);
-    top: 20%;
-    z-index: 2;
-}
-
-.carousel[class*="box"]:nth-child(3),
-.carousel[class*="box"]:nth-child(5) {
-    width: 100vh;
-    height: 60vh;
-    transform: scale(0.6) translate(-50%, -50%);
-    top: 30%;
-    z-index: 3;
-}
-
-.carousel [class*="box"]:nth-child(4) {
-    width: 60vw;
-    height: 60vh;
-    border-color: #c92026;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
     color: #fff;
-    transform: scale(1) translate(-50%, -50%);
-    top: 50%;
-    z-index: 4;
-}
-
-.carousel[class*="box"]:nth-child(1) {
-    left: -13%;
-}
-
-.carousel [class*="box"]:nth-child(2) {
-    left: -5%;
-}
-
-.carousel [class*="box"]:nth-child(3) {
-    left: 10%;
-}
-
-.carousel [class*="box"]:nth-child(4) {
-    left: 50%;
-}
-
-.carousel [class*="box"]:nth-child(5) {
-    left: 71%;
-}
-
-.carousel [class*="box"]:nth-child(6) {
-    left: 85%;
-}
-
-.carousel [class*="box"]:nth-child(7) {
-    left: 100%;
-}
-
-.carousel .firstSlide {
-    -webkit-animation: firstChild 1s;
-    animation: firstChild 1s;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 
 
 
+a.control_prev:hover,
+a.control_next:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+    left: -90%;
+}
+
+a.control_next {
+    right: -90%;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
 
 
-
-@media only screen and (min-width: 900px) {
+/* end slider*/
+@media only screen and (min-width: 768px) {
     .nav-toggle {
         display: none;
+        height: auto;
 
     }
 
     .nav-header {
-        display: block;
 
+        display: block;
     }
+
+
 
     .flex-nav {
         flex-direction: row;
@@ -394,6 +389,8 @@ h1 {
 
     .nav-links {
         height: auto;
+        text-align: center;
+
 
 
     }
@@ -406,18 +403,18 @@ h1 {
     .nav-link {
         height: auto;
         flex-direction: row;
-
+        border-bottom: none;
+        display: inline-block;
     }
+
 
     ul {
         text-align: center;
 
     }
 
-    .nav-link {
-        border-bottom: none;
-        display: inline-block;
-    }
+
+
 
     .nav-links {
         background: rgb (220, 220, 220);
@@ -426,12 +423,13 @@ h1 {
 
     }
 
+    .search-box {
+        display: block;
+    }
+
     .card-container {
-        flex-direction: column;
+        flex-direction: row;
 
     }
 
-    .carousel {}
-
-    .
 }
