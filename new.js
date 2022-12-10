@@ -1,4 +1,4 @@
-// nav toggle 
+// button name navbar
 let navToggle = document.querySelector("#navToggle")
 let nav = document.querySelector("#nav-links")
 
@@ -9,57 +9,30 @@ navToggle.addEventListener('click', () => {
     nav.classList.toggle('nav-open')
 })
 
-// slider container 
 
-jQuery(document).ready(function ($) {
+// slider aanbevelingen
 
-    $('#checkbox').change(function () {
-        setInterval(function () {
-            moveRight();
-        }, 2000);
-    });
 
-    var slideCount = $('#slider ul li').length;
-    var slideWidth = $('#slider ul li').width();
-    var slideHeight = $('#slider ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
+const slider = document.querySelector('.slider');
+const sliderInner = document.querySelector('.slider-inner');
+const prevButton = document.querySelector('.slider-prev');
+const nextButton = document.querySelector('.slider-next');
 
-    $('#slider').css({
-        width: slideWidth,
-        height: slideHeight
-    });
+let currentSlide = 0;
+const slideWidth = slider.offsetWidth;
 
-    $('#slider ul').css({
-        width: sliderUlWidth,
-        marginLeft: -slideWidth
-    });
+prevButton.addEventListener('click', function () {
+    currentSlide--;
+    if (currentSlide < 0) {
+        currentSlide = 2;
+    }
+    sliderInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+});
 
-    $('#slider ul li:last-child').prependTo('#slider ul');
-
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: +slideWidth
-        }, 200, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#slider ul').animate({
-            left: -slideWidth
-        }, 200, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
-
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-
+nextButton.addEventListener('click', function () {
+    currentSlide++;
+    if (currentSlide > 2) {
+        currentSlide = 0;
+    }
+    sliderInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 });

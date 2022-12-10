@@ -49,14 +49,31 @@ body {
     background-color: white;
 }
 
+.logo img {
+
+    align-items: left;
+    position: relative;
+    width: 15%;
+
+
+    height: 15%;
+
+
+
+
+
+
+}
 
 
 .nav-link {
     list-style: none;
-    margin: 10px 0px;
+    float: center;
+    margin-left: 60px;
     border-bottom: 2px solid rgb(66, 65, 65);
-    width: 8rem;
-    float: right;
+    width: 7rem;
+
+
     text-decoration: none;
 
 }
@@ -83,15 +100,20 @@ body {
 .nav-header,
 .subtitle {
     color: black;
-    text-align: center;
+    text-align: left;
+    max-width: 1100px;
+    margin-left: 5%;
+    align-items: center;
+
 
 
 
 }
 
-h1 {
-    color: red;
-
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(71, 70, 70);
 }
 
 h2 {
@@ -101,8 +123,9 @@ h2 {
 
 .nav-header {
     display: flex;
-
+    justify-content: center;
     align-items: center;
+
 
 
 }
@@ -136,8 +159,13 @@ a {
 
 
 .nav-links {
+
+    justify-content: center;
+
+    margin: 0 auto;
     height: 0;
     overflow: hidden;
+    display: flex;
 
 
 }
@@ -152,7 +180,9 @@ a {
 
 
 
-/* end mobile first*/
+
+
+
 
 .search-box input {
     position: absolute;
@@ -186,11 +216,61 @@ a {
 }
 
 
-
 /* end navbar section*/
 
+/* start slider aanbevelingen*/
 
-/* rsponsive cards*/
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.slider-inner {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s;
+}
+
+.slider-inner img {
+    flex: 1;
+    width: 33.3333%;
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.slider-prev {
+    left: 0;
+}
+
+.slider-next {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/* end slider aanbevelingen*/
+
+
+
+
+/* rsponsive cards gelezen boeken*/
 
 
 .card-container {
@@ -202,6 +282,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 30px;
+    margin-right: 50px;
 
 
 }
@@ -282,91 +363,66 @@ a {
     transition-delay: 0.3s;
 }
 
+button {
 
+    border: none;
+    font-size: 14px;
+    color: #FFF;
+    font-family: avenir_lt_std95_black;
+    font-weight: bolder;
+    padding: 4px 10px;
+    background-color: #F44336;
+    border-radius: 6px;
 
-
-/* slider-container*/
-#slider {
-    position: relative;
-
-    margin: 20px auto 0 auto;
-    border-radius: 4px;
-    width: 1000px;
-    height: 300px;
-
-}
-
-#slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 200px;
-
-    list-style: none;
-}
-
-#slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    height: 300px;
-    background: #ccc;
-    text-align: center;
-    line-height: 300px;
-}
-
-a.control_prev,
-a.control_next {
-    position: absolute;
-    top: 40%;
-
-
-    z-index: 999;
-    display: block;
-    padding: 4% 3%;
-    width: auto;
-    height: auto;
-    background: #2a2a2a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.8;
     cursor: pointer;
-}
-
-
-
-
-a.control_prev:hover,
-a.control_next:hover {
-    opacity: 1;
-    transition: all 0.5s ease;
-}
-
-a.control_prev {
-    border-radius: 0 2px 2px 0;
-    left: -90%;
-}
-
-a.control_next {
-    right: -90%;
-    border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
+    align-items: center;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 1em 1em;
+    overflow: hidden;
     position: relative;
-    margin: 10px auto;
-    width: 160px;
-    font-size: 18px;
+    text-decoration: none;
+
+
+
+
+
 }
+
+
+
+/* slider-container recente activiteiten*/
+
 
 
 /* end slider*/
-@media only screen and (min-width: 768px) {
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 600px) {
+    .logo img {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slider-inner img {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 600px) {
     .nav-toggle {
         display: none;
         height: auto;
